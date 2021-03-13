@@ -21,3 +21,21 @@ int find_balance(const binary_tree_t *tree)
 	else
 		return (rheight);
 }
+
+/**
+ * binary_tree_balance - function that measures the balance of a btree
+ * * @tree: node to start measuring
+ * Return: balance of a tree
+ */
+int binary_tree_balance(const binary_tree_t *tree)
+{
+	int left, right;
+
+	if (tree == NULL)
+		return (0);
+
+	left = find_balance(tree->left);
+	right = find_balance(tree->right);
+
+	return (left - rigt);
+}
