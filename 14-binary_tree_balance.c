@@ -37,5 +37,5 @@ int binary_tree_balance(const binary_tree_t *tree)
 	left = find_balance(tree->left);
 	right = find_balance(tree->right);
 
-	return (left - rigt);
+	return (left - right);
 }
